@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.tien.common</groupId>
-    <artifactId>tien-common</artifactId>
+    <artifactId>common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>tien-common</name>
     <description>tien-common</description>

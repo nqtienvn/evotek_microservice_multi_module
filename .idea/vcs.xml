@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/IAM_SERVICE2_KEYCLOAK" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/StorageService_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/iam-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage-service" vcs="Git" />
   </component>
 </project>

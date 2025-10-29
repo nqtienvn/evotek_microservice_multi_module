@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IAM_SERVICE2_KEYCLOAK/IAM_SERVICE2_KEYCLOAK.iml" filepath="$PROJECT_DIR$/IAM_SERVICE2_KEYCLOAK/IAM_SERVICE2_KEYCLOAK.iml" />
       <module fileurl="file://$PROJECT_DIR$/tien-common/common-client/common-client.iml" filepath="$PROJECT_DIR$/tien-common/common-client/common-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/tien-common/common-model/common-model.iml" filepath="$PROJECT_DIR$/tien-common/common-model/common-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/tien-common/common-web/common-web.iml" filepath="$PROJECT_DIR$/tien-common/common-web/common-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IAM_SERVICE2_KEYCLOAK/iam-service.iml" filepath="$PROJECT_DIR$/IAM_SERVICE2_KEYCLOAK/iam-service.iml" />
     </modules>
   </component>
 </project>

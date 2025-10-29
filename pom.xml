@@ -11,9 +11,9 @@
     <modules>
         <module>api-gateway</module>
         <module>service-discovery</module>
-        <module>StorageService_3</module>
-        <module>tien-common</module>
-        <module>IAM_SERVICE2_KEYCLOAK</module>
+        <module>storage-service</module>
+        <module>common</module>
+        <module>iam-service</module>
     </modules>
 
     <properties>

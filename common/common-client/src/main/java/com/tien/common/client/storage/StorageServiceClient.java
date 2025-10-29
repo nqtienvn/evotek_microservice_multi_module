@@ -18,24 +18,24 @@ import java.util.List;
         configuration = FeignClientConfig.class,
         fallbackFactory = StorageClientFallback.class)
 public interface StorageServiceClient {
-    @PostMapping(value = "/api/cloudinary", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping(value = "/api/storage-service/cloudinary", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     ApiResponse<String> uploadFile(@ModelAttribute UploadFileRequest uploadFileRequest);
 
-    @PostMapping(value = "/api/cloudinary/multi-file", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping(value = "/api/storage-service/cloudinary/multi-file", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     ApiResponse<List<String>> uploadMultiFile(@ModelAttribute UploadMultiFileRequest uploadMultiFileRequest);
 
-    @DeleteMapping(value = "/api/cloudinary")
+    @DeleteMapping(value = "/api/storage-service/cloudinary")
     ApiResponse<String> deleteFile(@RequestParam("publicId") String publicId);
 
-    @PutMapping(value = "/api/cloudinary", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PutMapping(value = "/api/storage-service/cloudinary", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     ApiResponse<String> updateFile(@ModelAttribute UpdateFileRequest updateFileRequest);
 
-    @GetMapping(value = "/api/cloudinary/file-publicId")
+    @GetMapping(value = "/api/storage-service/cloudinary/file-publicId")
     ApiResponse<String> getFile(@SpringQueryMap GetImageRequest getImageRequest);
 
-    @GetMapping(value = "/api/cloudinary/profile")
+    @GetMapping(value = "/api/storage-service/cloudinary/profile")
     ApiResponse<String> getProfile(@SpringQueryMap GetProfileRequest getProfileRequest);
 
-    @GetMapping(value = "/api/cloudinary/filter")
+    @GetMapping(value = "/api/storage-service/cloudinary/filter")
     ApiResponse<Page<FileS2Response>> filter(@SpringQueryMap FileFilterRequest filterRequest);
 }

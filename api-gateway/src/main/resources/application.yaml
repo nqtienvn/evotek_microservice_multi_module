@@ -8,15 +8,17 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: iam_route
-          uri: lb://keycloak-service
-          predicates:
-            - Path=/api/**
-
         - id: storage_route
           uri: lb://storage-service
           predicates:
-            - Path=/api/**
+            - Path=/api/storage-service/**
+
+        - id: iam_route
+          uri: lb://iam-service
+          predicates:
+            - Path=/api/iam-service/**
+
+
 
 eureka:
   instance:

@@ -23,13 +23,12 @@ public abstract class KeyCloakSecurityConfig {
                 .cors(Customizer.withDefaults())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
-                                "/api/auth/register",
-                                "/api/auth/login",
-                                "/api/auth/refresh-token",
-                                "/api/auth/admin-token",
+                                "/api/iam-service/auth/**",
                                 "/api/excel/**",
                                 "/swagger-ui/**",
-                                "/v3/api-docs/**").permitAll()
+                                "/v3/api-docs/**",
+                                "/api/iam-service/public/**",
+                                "/api/storage-service/public/**").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
