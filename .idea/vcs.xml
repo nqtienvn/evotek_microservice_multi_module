@@ -2,9 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/iam-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/iam-service-backup" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/storage-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/storage-service-backup" vcs="Git" />
   </component>
 </project>
